@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayyan Honey Center | Swat Pakistan</title>
+<meta name="description" content="Rayyan Honey Center, Kabal Swat. Explore White, Read, Black, Original and Param Honey. Contact us for orders and international delivery enquiries.">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#fffaf0;color:#242419}
+:root{--gold:#f5c542;--green:#17482c;--dark:#10130e}
+header{background:var(--dark);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.logo{font-family:Georgia,serif;color:var(--gold);font-size:29px;font-weight:bold}
+.logo small{display:block;color:white;font-family:Arial;font-size:12px;letter-spacing:3px}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px;font-weight:bold}
+nav a:hover{color:var(--gold)}
+.call{background:var(--gold);color:#111;padding:11px 15px;border-radius:25px;text-decoration:none;font-weight:bold}
+.hero{padding:65px 7%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px;background:linear-gradient(130deg,#fff6d5,#e8f0d9)}
+.tag{display:inline-block;background:var(--green);color:white;padding:9px 15px;border-radius:30px;font-size:13px;font-weight:bold}
+.hero h1{font-family:Georgia,serif;font-size:clamp(38px,5vw,62px);color:var(--green);line-height:1.1;margin:22px 0}
+.hero h1 span{color:#b17c00}
+.hero p{font-size:17px;line-height:1.8;color:#555344}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-block;text-decoration:none;padding:14px 19px;border-radius:8px;font-weight:bold}
+.primary{background:var(--green);color:white}
+.secondary{border:2px solid var(--green);color:var(--green)}
+.art{background:linear-gradient(145deg,#f9d75d,#e5a62a,#7c4618);padding:25px;border:5px solid white;border-radius:25px;text-align:center;box-shadow:0 12px 30px #47330c25}
+.art .emoji{font-size:90px}
+.art h2{font-family:Georgia,serif;font-size:30px;color:#211807;margin:10px}
+.art p{font-weight:bold;color:#342710}
+.highlights{background:#11140e;color:white;display:flex;justify-content:space-around;gap:20px;flex-wrap:wrap;padding:22px 5%;text-align:center}
+.highlights div{min-width:130px}
+.highlights b{display:block;color:var(--gold);margin-bottom:7px}
+section{padding:60px 6%}
+.heading{text-align:center;max-width:720px;margin:0 auto 35px}
+.heading small{color:#9b6c00;letter-spacing:2px;font-weight:bold}
+.heading h2{font-family:Georgia,serif;color:var(--green);font-size:clamp(29px,4vw,42px);margin:12px 0}
+.heading p{line-height:1.7;color:#68614f}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1150px;margin:auto}
+.card{background:white;border:1px solid #eadcae;border-radius:15px;overflow:hidden;box-shadow:0 7px 22px #33270010;display:flex;flex-direction:column}
+.product-art{height:155px;display:grid;place-items:center;font-size:70px;background:linear-gradient(135deg,#fff0ae,#f5c542)}
+.card:nth-child(2) .product-art{background:linear-gradient(135deg,#f5e0c5,#b77732)}
+.card:nth-child(3) .product-art{background:linear-gradient(135deg,#e9e1d5,#5a4635)}
+.card:nth-child(4) .product-art{background:linear-gradient(135deg,#fff9dc,#ead9aa)}
+.card:nth-child(5) .product-art{background:linear-gradient(135deg,#f6e8d0,#d2a15a)}
+.card:nth-child(6) .product-art{background:linear-gradient(135deg,#f9efcf,#e9b72e)}
+.card-content{padding:22px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:22px;color:var(--green);margin-bottom:10px}
+.card p{font-size:14px;color:#696354;line-height:1.6;margin-bottom:17px}
+.price{font-size:22px;color:#a36e00;font-weight:bold;margin-top:auto;margin-bottom:17px}
+.price small{font-size:13px;color:#706b5b;font-weight:normal}
+.order{display:block;text-align:center;background:var(--green);color:white;text-decoration:none;padding:13px;border-radius:8px;font-weight:bold}
+.order:hover,.primary:hover{background:#27663d}
+.offer{background:linear-gradient(135deg,#123b23,#071b10);color:white;text-align:center}
+.offer h2{font-family:Georgia,serif;font-size:clamp(28px,4vw,42px);color:var(--gold);margin-bottom:18px}
+.offer p{max-width:800px;margin:0 auto 25px;line-height:1.9;color:#eee9d8}
+.offer .btn{background:var(--gold);color:#16140b}
+.about{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.panel{background:white;padding:28px;border:1px solid #eadcae;border-radius:14px}
+.panel h3{font-family:Georgia,serif;color:var(--green);font-size:26px;margin-bottom:20px}
+.panel p{line-height:1.8;margin:12px 0;color:#514f43}
+.panel a{color:var(--green);font-weight:bold}
+footer{background:#0d100b;color:white;padding:30px 6%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+footer strong{color:var(--gold)}
+footer p{margin-top:8px;font-size:13px;color:#ddd}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#1caa56;color:white;text-decoration:none;padding:15px 19px;border-radius:40px;font-weight:bold;box-shadow:0 5px 20px #0003;z-index:10}
+@media(max-width:800px){
+ header{align-items:flex-start;flex-direction:column}
+ .hero{grid-template-columns:1fr;padding:45px 6%}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .about{grid-template-columns:1fr}
+}
+@media(max-width:500px){
+ .products{grid-template-columns:1fr}
+ nav{gap:12px}
+ .hero h1{font-size:39px}
+ .art .emoji{font-size:70px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="#home" style="text-decoration:none">
+    <div class="logo">🐝 RAYYAN
+      <small>HONEY CENTER · SWAT</small>
+    </div>
+  </a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Our Honey</a>
+    <a href="#offers">Overseas Offer</a>
+    <a href="#contact">Contact</a>
+    <a class="call" href="tel:+923002400945">☎ 0300 2400945</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero" id="home">
+  <div>
+    <span class="tag">🍯 NEW SEASON HONEY AVAILABLE</span>
+    <h1>Nature's Sweet Gift.<br><span>From Swat to You!</span></h1>
+    <p>
+      Welcome to Rayyan Honey Center.
+      Explore our honey varieties and contact us
+      directly to confirm prices, availability and delivery.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#products">Explore Honey</a>
+      <a class="btn secondary"
+      href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20ask%20about%20your%20honey."
+      target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </div>
+  <div class="art">
+    <div class="emoji">🍯🐝</div>
+    <h2>Rayyan Honey Center</h2>
+    <p>NEW SEASON · HONEY FROM SWAT</p>
+    <div style="font-size:18px;margin-top:20px">🌼 🤍 🍯 🖤 🌿</div>
+  </div>
+</div>
+
+<div class="highlights">
+  <div><b>🍯 Honey Varieties</b><span>Different types available</span></div>
+  <div><b>🤝 Direct Contact</b><span>Ask before ordering</span></div>
+  <div><b>📦 Delivery Enquiries</b><span>Confirm charges first</span></div>
+</div>
+
+<section id="products">
+  <div class="heading">
+    <small>OUR COLLECTION</small>
+    <h2>Choose Your Honey</h2>
+    <p>Check our honey varieties below. Please contact us to confirm
+    current stock, packing and delivery charges.</p>
+  </div>
+
+  <div class="products">
+
+    <article class="card">
+      <div class="product-art">🍯</div>
+      <div class="card-content">
+        <h3>Original Honey</h3>
+        <p>Original honey. Contact us to confirm availability and details.</p>
+        <div class="price">Rs. 7,500 <small>/ 1 kg</small></div>
+        <a class="order" href="https://wa.me/923002400945?text=I%20want%20to%20order%201%20kg%20Original%20Honey%20for%20Rs.%207500.%20Please%20confirm%20availability."
+        target="_blank" rel="noopener">Order / Ask</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-art">🌼</div>
+      <div class="card-content">
+        <h3>Param Honey</h3>
+        <p>Contact us to confirm product details and current stock.</p>
+        <div class="price">Rs. 1,000 <small>/ 1 kg</small></div>
+        <a class="order" href="https://wa.me/923002400945?text=I%20want%20to%20ask%20about%201%20kg%20Param%20Honey%20for%20Rs.%201000."
+        target="_blank" rel="noopener">Order / Ask</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-art">🤍</div>
+      <div class="card-content">
+        <h3>White Honey</h3>
+        <p>Ask us about new-season availability and pricing.</p>
+        <div class="price">Ask for price</div>
+        <a class="order" href="https://wa.me/923002400945?text=Please%20tell%20me%20the%20price%20and%20availability%20of%20White%20Honey."
+        target="_blank" rel="noopener">Check Price</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-art">🟠</div>
+      <div class="card-content">
+        <h3>Read Honey</h3>
+        <p>Contact us for price, packing and current availability.</p>
+        <div class="price">Ask for price</div>
+        <a class="order" href="https://wa.me/923002400945?text=Please%20tell%20me%20the%20price%20and%20availability%20of%20Read%20Honey."
+        target="_blank" rel="noopener">Check Price</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-art">🖤</div>
+      <div class="card-content">
+        <h3>Black Honey</h3>
+        <p>Ask us if this variety is available this season.</p>
+        <div class="price">Ask for price</div>
+        <a class="order" href="https://wa.me/923002400945?text=Please%20tell%20me%20the%20price%20and%20availability%20of%20Black%20Honey."
+        target="_blank" rel="noopener">Check Price</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-art">🌿</div>
+      <div class="card-content">
+        <h3>Seasonal Honey</h3>
+        <p>Ask about the honey types available right now.</p>
+        <div class="price">Ask for price</div>
+        <a class="order" href="https://wa.me/923002400945?text=Which%20seasonal%20honey%20types%20are%20available%20right%20now%3F"
+        target="_blank" rel="noopener">Ask Availability</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="offer" id="offers">
+  <h2>🌍 Special Offer for Overseas Customers</h2>
+  <p>
+    Living outside Pakistan? Contact Rayyan Honey Center to ask about
+    sending honey to your country. We can discuss shipping costs,
+    minimum order quantities, customs rules and payment options.
+    International delivery and free shipping must be confirmed before ordering.
+  </p>
+  <a class="btn"
+  href="https://wa.me/923002400945?text=I%20live%20outside%20Pakistan.%20Can%20you%20ship%20honey%20to%20my%20country%3F%20Please%20tell%20me%20the%20shipping%20cost."
+  target="_blank" rel="noopener">Ask About International Shipping</a>
+</section>
+
+<section>
+  <div class="heading">
+    <small>ABOUT US</small>
+    <h2>Rayyan Honey Center</h2>
+    <p>Based in Kabal, Swat, Pakistan. Contact us directly for honey
+    details, prices, availability and delivery information.</p>
+  </div>
+
+  <div class="about" id="contact">
+    <div class="panel">
+      <h3>Contact & Location</h3>
+      <p>📍 <strong>Address:</strong><br>
+      Dadahara Manz, Palaw, Kabal, Swat, Pakistan</p>
+      <p>📞 <strong>Phone:</strong><br>
+      <a href="tel:+923002400945">0300 2400945</a></p>
+      <p>💬 <strong>WhatsApp:</strong><br>
+      <a href="https://wa.me/923002400945" target="_blank" rel="noopener">Message us directly</a></p>
+    </div>
+
+    <div class="panel">
+      <h3>Before You Order</h3>
+      <p>✓ Confirm the product and quantity.</p>
+      <p>✓ Confirm the total price and local delivery charges.</p>
+      <p>✓ For overseas orders, confirm shipping and customs requirements.</p>
+      <p>✓ Ask about the honey source, season and any available quality testing.</p>
+      <a class="btn primary" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20confirm%20a%20honey%20order."
+      target="_blank" rel="noopener">Contact Us</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><strong>🍯 Rayyan Honey Center</strong>
+    <p>Nature's Sweet Gift · Kabal, Swat, Pakistan</p>
+  </div>
+  <div>
+    <p>Phone: 0300 2400945</p>
+    <p>© <span id="year"></span> Rayyan Honey Center</p>
+  </div>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20am%20interested%20in%20your%20honey."
+target="_blank" rel="noopener">💬 WhatsApp Order</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
