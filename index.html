@@ -4,32 +4,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rayyan Honey Center | Swat Pakistan</title>
-<meta name="description" content="Explore original, Param, white and black honey from Rayyan Honey Center in Kabal, Swat, Pakistan.">
 <meta name="theme-color" content="#103b2c">
+<meta name="description" content="Rayyan Honey Center, Kabal Swat, Pakistan. Explore original, Param, white and black honey. Contact us for orders and overseas enquiries.">
+<title>Rayyan Honey Center | Swat Pakistan</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--green:#123b2c;--deep:#08251b;--gold:#dfb65e;--cream:#fff9ed;--text:#26352c}
+:root{--green:#123b2c;--dark:#08251b;--gold:#dfb65e;--cream:#fff9ed}
 html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.65}
+body{font-family:Arial,sans-serif;background:var(--cream);color:#26352c;line-height:1.65}
 a{text-decoration:none}
-img{max-width:100%}
+img{display:block;max-width:100%}
 
-/* HADITH */
+/* HADITH BANNER */
 .hadith{
-  text-align:center;
-  padding:23px 14px;
-  color:#fff8e8;
-  background:linear-gradient(120deg,#08251b,#1b5038,#08251b);
-  border-bottom:3px solid var(--gold);
+ text-align:center;padding:22px 14px;color:#fff8e8;
+ background:linear-gradient(120deg,#08251b,#1b5038,#08251b);
+ border-bottom:3px solid var(--gold)
 }
-.hadith-label{color:#f3d58e;font-size:11px;letter-spacing:3px;font-weight:bold}
-.arabic{font-family:Georgia,serif;color:#ffe4a2;font-size:clamp(27px,4vw,39px);direction:rtl;line-height:1.9}
+.hadith-label{font-size:11px;letter-spacing:3px;color:#f3d58e;font-weight:bold}
+.arabic{font-family:Georgia,serif;direction:rtl;font-size:clamp(27px,4vw,39px);line-height:1.9;color:#ffe4a2}
 .translation{font-size:14px;margin:5px auto}
 .reference{font-size:12px;color:#f3d58e}
 
-/* TOP BAR AND NAVIGATION */
+/* TOP BAR AND HEADER */
 .topbar{background:#e8c978;color:#173323;text-align:center;padding:9px;font-size:12px;font-weight:bold}
 header{background:var(--green);color:white;padding:17px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .brand{font-family:Georgia,serif;font-size:25px;font-weight:bold;color:#f4d48a;line-height:1.3}
@@ -38,17 +36,12 @@ nav{display:flex;gap:17px;flex-wrap:wrap}
 nav a{color:white;font-size:13px}
 nav a:hover{color:var(--gold)}
 
-/* HERO WITH YOUR BACKGROUND IMAGE */
+/* YOUR BACKGROUND PICTURE */
 .hero{
-  min-height:490px;
-  display:flex;
-  align-items:center;
-  padding:65px 8%;
-  color:white;
-  background:
-    linear-gradient(90deg,rgba(4,28,19,.88),rgba(4,28,19,.32)),
-    url('honey-background.jpg') center 48%/cover no-repeat,
-    var(--green);
+ min-height:500px;display:flex;align-items:center;padding:65px 8%;color:white;
+ background:
+ linear-gradient(90deg,rgba(4,28,19,.88),rgba(4,28,19,.28)),
+ url('honey-background.jpg') center/cover no-repeat;
 }
 .hero-content{max-width:650px}
 .eyebrow{color:#f1cf7e;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:bold}
@@ -72,12 +65,12 @@ h1{font-family:Georgia,serif;font-size:clamp(39px,6vw,68px);line-height:1.12;mar
 h2{font-family:Georgia,serif;color:var(--green);font-size:clamp(29px,4vw,42px);line-height:1.2;margin:10px 0}
 .section-head p{color:#6c746c;font-size:14px}
 
-/* PRODUCTS */
+/* HONEY PRODUCT CARDS */
 .products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:21px}
 .card{background:white;border:1px solid #eee5d4;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px #183b2c0d;transition:.2s}
 .card:hover{transform:translateY(-4px);box-shadow:0 14px 28px #183b2c18}
 .product-image{height:225px;background:#e9e4d7;overflow:hidden}
-.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
 .card:hover .product-image img{transform:scale(1.04)}
 .card-body{padding:19px}
 .tag{font-size:10px;text-transform:uppercase;letter-spacing:1.3px;color:#a17b25;font-weight:bold}
@@ -94,7 +87,7 @@ h2{font-family:Georgia,serif;color:var(--green);font-size:clamp(29px,4vw,42px);l
 .honesty h2{font-size:28px}
 .honesty p{max-width:760px;margin:8px auto;color:#536052;font-size:14px}
 
-/* OVERSEAS */
+/* OVERSEAS CUSTOMERS */
 .overseas{background:var(--green);color:white;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;padding:55px 8%}
 .overseas h2{color:#f4d48a}
 .overseas p{color:#e4e9e2;margin:12px 0;font-size:14px}
@@ -112,7 +105,7 @@ h2{font-family:Georgia,serif;color:var(--green);font-size:clamp(29px,4vw,42px);l
 .contact-card a{color:#226744;font-weight:bold;font-size:13px}
 
 /* FOOTER */
-footer{background:var(--deep);color:#e8e6dc;text-align:center;padding:28px 15px;font-size:12px}
+footer{background:var(--dark);color:#e8e6dc;text-align:center;padding:28px 15px;font-size:12px}
 footer strong{color:#f4d48a;font-size:17px}
 footer p{margin:5px}
 .footer-links{margin:12px 0}
@@ -120,214 +113,215 @@ footer p{margin:5px}
 .whatsapp-float{position:fixed;right:17px;bottom:17px;z-index:5;background:#168b50;color:white;padding:12px 16px;border-radius:30px;box-shadow:0 5px 18px #0003;font-weight:bold;font-size:13px}
 
 @media(max-width:950px){
-  .products{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .overseas{grid-template-columns:1fr}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .overseas{grid-template-columns:1fr}
 }
 @media(max-width:560px){
-  header{justify-content:center;text-align:center;padding:17px 4%}
-  nav{justify-content:center;gap:12px}
-  .brand{font-size:22px}
-  .hero{padding:48px 6%;min-height:430px}
-  .products{grid-template-columns:1fr}
-  .product-image{height:260px}
-  .section{padding:46px 6%}
-  .contact-grid{grid-template-columns:1fr}
-  .trust div{padding:13px 5px}
-  .trust strong{font-size:10px}
-  .trust span{font-size:10px}
-  .honesty{margin:0 6% 40px;padding:22px 14px}
-  .translation{font-size:12px}
-  .hadith-label{letter-spacing:2px}
-  .whatsapp-float{right:10px;bottom:10px;padding:10px 13px}
+ header{justify-content:center;text-align:center;padding:17px 4%}
+ nav{justify-content:center;gap:12px}
+ .brand{font-size:22px}
+ .hero{padding:48px 6%;min-height:430px}
+ .products{grid-template-columns:1fr}
+ .product-image{height:260px}
+ .section{padding:46px 6%}
+ .contact-grid{grid-template-columns:1fr}
+ .trust div{padding:13px 5px}
+ .trust strong{font-size:10px}
+ .trust span{font-size:10px}
+ .honesty{margin:0 6% 40px;padding:22px 14px}
+ .translation{font-size:12px}
+ .hadith-label{letter-spacing:2px}
+ .whatsapp-float{right:10px;bottom:10px;padding:10px 13px}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HADITH BANNER -->
+<!-- HADITH -->
 <section class="hadith">
-  <div class="hadith-label">HONESTY • TRUST • GOOD BUSINESS</div>
-  <div class="arabic" lang="ar">مَنْ غَشَّنَا فَلَيْسَ مِنَّا</div>
-  <p class="translation">"Jis ne humein dhoka diya, woh hum mein se nahi."</p>
-  <p class="reference">Sahih Muslim — Hadith 101*</p>
+ <div class="hadith-label">HONESTY • TRUST • GOOD BUSINESS</div>
+ <div class="arabic" lang="ar">مَنْ غَشَّنَا فَلَيْسَ مِنَّا</div>
+ <p class="translation">"Jis ne humein dhoka diya, woh hum mein se nahi."</p>
+ <p class="reference">Sahih Muslim — Hadith 101*</p>
 </section>
 
 <div class="topbar">🍯 NEW SEASON HONEY AVAILABLE • RAYYAN HONEY CENTER, SWAT</div>
 
 <header>
-  <a class="brand" href="#home">RAYYAN HONEY CENTER
-    <small>NATURE'S GOLD • KABAL SWAT</small>
-  </a>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Our Honey</a>
-    <a href="#honesty">Our Values</a>
-    <a href="#overseas">Overseas Offer</a>
-    <a href="#contact">Contact</a>
-  </nav>
+ <a class="brand" href="#home">RAYYAN HONEY CENTER
+  <small>NATURE'S GOLD • KABAL SWAT</small>
+ </a>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#products">Our Honey</a>
+  <a href="#honesty">Our Values</a>
+  <a href="#overseas">Overseas Offer</a>
+  <a href="#contact">Contact</a>
+ </nav>
 </header>
 
-<!-- HERO -->
+<!-- HOME / BACKGROUND -->
 <section class="hero" id="home">
-  <div class="hero-content">
-    <div class="eyebrow">From the beautiful valleys of Swat</div>
-    <h1>A Taste of Nature in Every Drop.</h1>
-    <p>Explore original, Param, white and black honey at Rayyan Honey Center, Dadahara Manz Palaw, Kabal, Swat, Pakistan.</p>
-    <a class="btn btn-gold" href="#products">Explore Our Honey</a>
-    <a class="btn btn-outline" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20please%20share%20your%20honey%20details." target="_blank" rel="noopener">Contact on WhatsApp</a>
-  </div>
+ <div class="hero-content">
+  <div class="eyebrow">From the beautiful valleys of Swat</div>
+  <h1>A Taste of Nature in Every Drop.</h1>
+  <p>Explore original, Param, white and black honey at Rayyan Honey Center, Dadahara Manz Palaw, Kabal, Swat, Pakistan.</p>
+  <a class="btn btn-gold" href="#products">Explore Our Honey</a>
+  <a class="btn btn-outline" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20please%20share%20your%20honey%20details." target="_blank" rel="noopener">Contact on WhatsApp</a>
+ </div>
 </section>
 
 <div class="trust">
-  <div><strong>🍯 Honey Varieties</strong><span>Explore our selection</span></div>
-  <div><strong>🤝 Honest Communication</strong><span>Ask before ordering</span></div>
-  <div><strong>🌍 Overseas Enquiries</strong><span>Ask about shipping</span></div>
+ <div><strong>🍯 Honey Varieties</strong><span>Explore our selection</span></div>
+ <div><strong>🤝 Honest Communication</strong><span>Ask before ordering</span></div>
+ <div><strong>🌍 Overseas Enquiries</strong><span>Ask about shipping</span></div>
 </div>
 
 <!-- PRODUCTS -->
 <section class="section" id="products">
-  <div class="section-head">
-    <span>Our Collection</span>
-    <h2>Choose Your Honey</h2>
-    <p>Browse our available varieties. Contact us to confirm stock, origin, packaging and delivery charges.</p>
-  </div>
+ <div class="section-head">
+  <span>Our Collection</span>
+  <h2>Choose Your Honey</h2>
+  <p>Explore our selection. Please confirm availability, product details and delivery charges before ordering.</p>
+ </div>
 
-  <div class="products">
+ <div class="products">
 
-    <!-- ORIGINAL HONEY -->
-    <article class="card">
-      <div class="product-image">
-        <img src="honey-background.jpg" alt="Golden honeycomb and honey" loading="lazy">
-      </div>
-      <div class="card-body">
-        <div class="tag">Featured Selection</div>
-        <h3>Original Honey</h3>
-        <p>Ask us about the current batch, origin and availability.</p>
-        <div class="price">Rs. 7,500 <small>/ 1 kg</small></div>
-        <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20Original%20Honey%20for%20Rs.%207500." target="_blank" rel="noopener">Order on WhatsApp</a>
-      </div>
-    </article>
+  <!-- ORIGINAL HONEY -->
+  <article class="card">
+   <div class="product-image">
+    <img src="honey-background.jpg" alt="Golden honeycomb with honey" loading="lazy">
+   </div>
+   <div class="card-body">
+    <div class="tag">Featured Selection</div>
+    <h3>Original Honey</h3>
+    <p>Contact us to confirm the current batch, origin and availability.</p>
+    <div class="price">Rs. 7,500 <small>/ 1 kg</small></div>
+    <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20Original%20Honey%20for%20Rs.%207500." target="_blank" rel="noopener">Order on WhatsApp</a>
+   </div>
+  </article>
 
-    <!-- PARAM HONEY -->
-    <article class="card">
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=700&q=80" alt="Honey jar" loading="lazy">
-      </div>
-      <div class="card-body">
-        <div class="tag">Our Collection</div>
-        <h3>Param Honey</h3>
-        <p>Contact us to confirm the current batch and packaging.</p>
-        <div class="price">Rs. 1,000 <small>/ 1 kg</small></div>
-        <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20Param%20Honey%20for%20Rs.%201000." target="_blank" rel="noopener">Order on WhatsApp</a>
-      </div>
-    </article>
+  <!-- PARAM HONEY -->
+  <article class="card">
+   <div class="product-image">
+    <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=700&q=80" alt="Honey product jar" loading="lazy">
+   </div>
+   <div class="card-body">
+    <div class="tag">Our Collection</div>
+    <h3>Param Honey</h3>
+    <p>Contact us to confirm the current batch and packaging.</p>
+    <div class="price">Rs. 1,000 <small>/ 1 kg</small></div>
+    <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20Param%20Honey%20for%20Rs.%201000." target="_blank" rel="noopener">Order on WhatsApp</a>
+   </div>
+  </article>
 
-    <!-- WHITE HONEY: YOUR UPLOADED IMAGE -->
-    <article class="card">
-      <div class="product-image">
-        <img src="white-honey.jpg" alt="White honeycomb with bees" loading="lazy">
-      </div>
-      <div class="card-body">
-        <div class="tag">White Honey</div>
-        <h3>White Honey</h3>
-        <p>Contact us to confirm availability and product details.</p>
-        <div class="price">Rs. 9,500 <small>/ 1 kg</small></div>
-        <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20White%20Honey%20for%20Rs.%209500." target="_blank" rel="noopener">Order on WhatsApp</a>
-      </div>
-    </article>
+  <!-- WHITE HONEY: YOUR PICTURE -->
+  <article class="card">
+   <div class="product-image">
+    <img src="white-honey.jpg" alt="White honeycomb and bees" loading="lazy">
+   </div>
+   <div class="card-body">
+    <div class="tag">White Honey</div>
+    <h3>White Honey</h3>
+    <p>Contact us to confirm availability and product details.</p>
+    <div class="price">Rs. 9,500 <small>/ 1 kg</small></div>
+    <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20White%20Honey%20for%20Rs.%209500." target="_blank" rel="noopener">Order on WhatsApp</a>
+   </div>
+  </article>
 
-    <!-- BLACK HONEY: YOUR UPLOADED IMAGE -->
-    <article class="card">
-      <div class="product-image">
-        <img src="black-honey.jpg" alt="Dark honeycomb with bees" loading="lazy">
-      </div>
-      <div class="card-body">
-        <div class="tag">Black Honey</div>
-        <h3>Black Honey</h3>
-        <p>Contact us to confirm availability and product details.</p>
-        <div class="price">Rs. 5,500 <small>/ 1 kg</small></div>
-        <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20Black%20Honey%20for%20Rs.%205500." target="_blank" rel="noopener">Order on WhatsApp</a>
-      </div>
-    </article>
+  <!-- BLACK HONEY: YOUR PICTURE -->
+  <article class="card">
+   <div class="product-image">
+    <img src="black-honey.jpg" alt="Dark honeycomb and bees" loading="lazy">
+   </div>
+   <div class="card-body">
+    <div class="tag">Black Honey</div>
+    <h3>Black Honey</h3>
+    <p>Contact us to confirm availability and product details.</p>
+    <div class="price">Rs. 5,500 <small>/ 1 kg</small></div>
+    <a class="order" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%201kg%20Black%20Honey%20for%20Rs.%205500." target="_blank" rel="noopener">Order on WhatsApp</a>
+   </div>
+  </article>
 
-  </div>
-
-  <p class="note">Prices are in Pakistani Rupees (PKR). Please confirm current stock and delivery charges before payment.</p>
+ </div>
+ <p class="note">Prices are in Pakistani Rupees (PKR). Confirm stock and delivery charges before payment.</p>
 </section>
 
-<!-- HONESTY -->
+<!-- HONESTY AND HADITH -->
 <section class="honesty" id="honesty">
-  <div class="eyebrow">Our Business Values</div>
-  <h2>Honesty Is Our Promise</h2>
-  <p class="arabic" style="color:#174b35">مَنْ غَشَّنَا فَلَيْسَ مِنَّا</p>
-  <p>We believe in clear communication with every customer. Ask us about the variety, origin, availability and price before placing an order.</p>
+ <div class="eyebrow">Our Business Values</div>
+ <h2>Honesty Is Our Promise</h2>
+ <p class="arabic" style="color:#174b35">مَنْ غَشَّنَا فَلَيْسَ مِنَّا</p>
+ <p>We believe in honest communication. Ask us about the honey variety, origin, availability and price before placing an order.</p>
 </section>
 
-<!-- OVERSEAS OFFER -->
+<!-- OVERSEAS CUSTOMERS -->
 <section class="overseas" id="overseas">
-  <div>
-    <div class="eyebrow">For Customers Around the World</div>
-    <h2>A Special Offer for Overseas Customers</h2>
-    <p>Living outside Pakistan? Contact us to discuss international orders, available packaging and shipping options.</p>
-    <ul>
-      <li>Ask about bulk and family orders</li>
-      <li>Tell us your country and required quantity</li>
-      <li>Request a personalised price quote</li>
-    </ul>
-    <a class="btn btn-gold" href="https://wa.me/923002400945?text=Hello%2C%20I%20am%20an%20overseas%20customer.%20Please%20share%20your%20offer%20and%20shipping%20details." target="_blank" rel="noopener">Ask About Overseas Offer</a>
-  </div>
-  <div class="overseas-box">
-    <h3>From Swat, Pakistan</h3>
-    <p>Tell us your country and required quantity so we can discuss available options and the total estimated cost.</p>
-    <p><strong>Important:</strong> Shipping, customs rules, delivery charges and destination restrictions must be confirmed before accepting an international order.</p>
-  </div>
+ <div>
+  <div class="eyebrow">For Customers Around the World</div>
+  <h2>A Special Offer for Overseas Customers</h2>
+  <p>Living outside Pakistan? Contact us to discuss international orders, packaging and shipping options.</p>
+  <ul>
+   <li>Ask about bulk and family orders</li>
+   <li>Tell us your country and required quantity</li>
+   <li>Request a personalised price quote</li>
+  </ul>
+  <a class="btn btn-gold" href="https://wa.me/923002400945?text=Hello%2C%20I%20am%20an%20overseas%20customer.%20Please%20share%20your%20offer%20and%20shipping%20details." target="_blank" rel="noopener">Ask About Overseas Offer</a>
+ </div>
+ <div class="overseas-box">
+  <h3>From Swat, Pakistan</h3>
+  <p>Tell us your country and required quantity so we can discuss available options and the total estimated cost.</p>
+  <p><strong>Important:</strong> Shipping charges, customs rules and destination restrictions must be confirmed before accepting an international order.</p>
+ </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
-  <div class="section-head">
-    <span>Get in Touch</span>
-    <h2>Contact Rayyan Honey Center</h2>
-    <p>For orders, prices and product availability, contact us directly.</p>
+ <div class="section-head">
+  <span>Get in Touch</span>
+  <h2>Contact Rayyan Honey Center</h2>
+  <p>For orders, prices and product availability, contact us directly.</p>
+ </div>
+
+ <div class="contact-grid">
+  <div class="contact-card">
+   <div class="symbol">📱</div>
+   <h3>Phone & WhatsApp</h3>
+   <p>0300 2400945</p>
+   <p style="margin-top:10px">
+    <a href="tel:+923002400945">Call Us</a> |
+    <a href="https://wa.me/923002400945" target="_blank" rel="noopener">Message Us</a>
+   </p>
   </div>
 
-  <div class="contact-grid">
-    <div class="contact-card">
-      <div class="symbol">📱</div>
-      <h3>Phone & WhatsApp</h3>
-      <p>0300 2400945</p>
-      <p style="margin-top:10px">
-        <a href="tel:+923002400945">Call Us</a> |
-        <a href="https://wa.me/923002400945" target="_blank" rel="noopener">Message Us</a>
-      </p>
-    </div>
-    <div class="contact-card">
-      <div class="symbol">📍</div>
-      <h3>Our Location</h3>
-      <p>Dadahara Manz, Palaw, Kabal, Swat, Pakistan</p>
-    </div>
-    <div class="contact-card">
-      <div class="symbol">🍯</div>
-      <h3>New Season Honey</h3>
-      <p>Ask about available varieties, current prices and order details.</p>
-      <p style="margin-top:10px"><a href="#products">View Collection</a></p>
-    </div>
+  <div class="contact-card">
+   <div class="symbol">📍</div>
+   <h3>Our Location</h3>
+   <p>Dadahara Manz, Palaw, Kabal, Swat, Pakistan</p>
   </div>
+
+  <div class="contact-card">
+   <div class="symbol">🍯</div>
+   <h3>New Season Honey</h3>
+   <p>Ask about available varieties, current prices and order details.</p>
+   <p style="margin-top:10px"><a href="#products">View Collection</a></p>
+  </div>
+ </div>
 </section>
 
 <footer>
-  <p><strong>RAYYAN HONEY CENTER</strong></p>
-  <p>Dadahara Manz, Palaw, Kabal, Swat, Pakistan</p>
-  <p>Phone: 0300 2400945</p>
-  <div class="footer-links">
-    <a href="#home">Home</a>
-    <a href="#products">Honey</a>
-    <a href="#overseas">Overseas</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <p>© <span id="year"></span> Rayyan Honey Center. All rights reserved.</p>
-  <p style="font-size:10px;margin-top:10px">*Verify the Hadith numbering against your preferred edition.</p>
+ <p><strong>RAYYAN HONEY CENTER</strong></p>
+ <p>Dadahara Manz, Palaw, Kabal, Swat, Pakistan</p>
+ <p>Phone: 0300 2400945</p>
+ <div class="footer-links">
+  <a href="#home">Home</a>
+  <a href="#products">Honey</a>
+  <a href="#overseas">Overseas</a>
+  <a href="#contact">Contact</a>
+ </div>
+ <p>© <span id="year"></span> Rayyan Honey Center. All rights reserved.</p>
+ <p style="font-size:10px;margin-top:10px">*Please verify the Hadith numbering against your preferred edition.</p>
 </footer>
 
 <a class="whatsapp-float" href="https://wa.me/923002400945?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20ask%20about%20your%20honey." target="_blank" rel="noopener">WhatsApp Order</a>
@@ -335,6 +329,5 @@ footer p{margin:5px}
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
